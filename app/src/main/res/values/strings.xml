@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AI Planting</string>
+    <string name="tab_menu_balcony">阳台</string>
+    <string name="tab_menu_book">百科</string>
+    <string name="tab_menu_store">商城</string>
+    <string name="tab_menu_community">社区</string>
+    <string name="tab_menu_my">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
