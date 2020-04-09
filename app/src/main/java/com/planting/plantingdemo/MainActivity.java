@@ -9,13 +9,19 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -29,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private StoreFragment store_fragment;
     private FragmentManager fManager;
+
+//    private List<String> left_list_items = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +54,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fManager = getFragmentManager();
         bindViews();
         tab_menu_balcony.performClick();
+//        initLeft_List_Items();
+//        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.left_recyclerview);
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+//        recyclerView.setLayoutManager(layoutManager);
+//        Left_List_Adapter left_list_adapter = new Left_List_Adapter(left_list_items);
+//        recyclerView.setAdapter(left_list_adapter);
     }
     private void bindViews(){
         tab_menu_balcony = (TextView)findViewById(R.id.tab_menu_balcony);
@@ -96,6 +110,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }else{
                     fTransaction.show(store_fragment);
                 }
+
                 break;
             case R.id.tab_menu_community:
                 setSelected();
@@ -119,4 +134,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         return true;
     }
+
+//    public void initLeft_List_Items(){
+//        left_list_items.add("多肉植物");
+//        left_list_items.add("植物用具");
+//        left_list_items.add("观叶绿植");
+//        left_list_items.add("观花植物");
+//        left_list_items.add("办公场所");
+//        left_list_items.add("阳台庭院");
+//        left_list_items.add("植物尺寸");
+//        left_list_items.add("园艺周边");
+//        left_list_items.add("风格");
+//    }
+
 }
