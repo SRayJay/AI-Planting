@@ -4,6 +4,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.app.Fragment;
 //import android.support.v4.app.FragmentTransaction;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -15,7 +16,6 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
@@ -31,17 +31,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tab_menu_store;
     private TextView tab_menu_community;
     private TextView tab_menu_my;
-    private FrameLayout ly_content;
+    private CoordinatorLayout ly_content;
 
     private StoreFragment store_fragment;
     private FragmentManager fManager;
 
-//    private List<String> left_list_items = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -54,12 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fManager = getFragmentManager();
         bindViews();
         tab_menu_balcony.performClick();
-//        initLeft_List_Items();
-//        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.left_recyclerview);
-//        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-//        recyclerView.setLayoutManager(layoutManager);
-//        Left_List_Adapter left_list_adapter = new Left_List_Adapter(left_list_items);
-//        recyclerView.setAdapter(left_list_adapter);
+
     }
     private void bindViews(){
         tab_menu_balcony = (TextView)findViewById(R.id.tab_menu_balcony);
@@ -67,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tab_menu_community = (TextView)findViewById(R.id.tab_menu_community);
         tab_menu_store = (TextView)findViewById(R.id.tab_menu_store);
         tab_menu_my = (TextView)findViewById(R.id.tab_menu_my);
-        ly_content = (FrameLayout) findViewById(R.id.ly_content);
+        ly_content = (CoordinatorLayout) findViewById(R.id.ly_content);
 
         tab_menu_my.setOnClickListener(this);
         tab_menu_store.setOnClickListener(this);

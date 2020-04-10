@@ -112,13 +112,13 @@
             </LinearLayout>
         </LinearLayout>
         //fragment的容器
-        <FrameLayout
+        <android.support.design.widget.CoordinatorLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/toolbar"
             android:layout_above="@id/ly_tab_menu"
             android:id="@+id/ly_content">
-        </FrameLayout>
+        </android.support.design.widget.CoordinatorLayout>
     </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
