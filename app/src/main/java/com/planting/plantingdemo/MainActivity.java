@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private CoordinatorLayout ly_content;
 
     private StoreFragment store_fragment;
+    private BookFragment book_fragment;
     private FragmentManager fManager;
 
 
@@ -50,9 +51,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (actionBar!=null){
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setHomeAsUpIndicator(R.mipmap.menu);
+            actionBar.setTitle("");
         }
         fManager = getFragmentManager();
         bindViews();
+        //模拟一次点击，即主页在balcony
         tab_menu_balcony.performClick();
 
     }
@@ -80,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void hideAllFragment(FragmentTransaction fragmentTransaction){
         if(store_fragment != null)fragmentTransaction.hide(store_fragment);
+        if(book_fragment != null)fragmentTransaction.hide(book_fragment);
 
     }
 
@@ -95,6 +99,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tab_menu_book:
                 setSelected();
                 tab_menu_book.setSelected(true);
+                if (book_fragment==null){
+                    book_fragment = new BookFragment();
+                    fTransaction.add(R.id.ly_content,book_fragment);
+                }else{
+                    fTransaction.show(book_fragment);
+                }
                 break;
             case R.id.tab_menu_store:
                 setSelected();
@@ -129,17 +139,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         return true;
     }
-
-//    public void initLeft_List_Items(){
-//        left_list_items.add("多肉植物");
-//        left_list_items.add("植物用具");
-//        left_list_items.add("观叶绿植");
-//        left_list_items.add("观花植物");
-//        left_list_items.add("办公场所");
-//        left_list_items.add("阳台庭院");
-//        left_list_items.add("植物尺寸");
-//        left_list_items.add("园艺周边");
-//        left_list_items.add("风格");
-//    }
-
 }
