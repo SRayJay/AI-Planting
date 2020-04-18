@@ -16,4 +16,72 @@
         <item name="android:textColor">@drawable/tab_menu_text</item>
     </style>
 
+    //以下为我的界面用到的style
+    <style name="my_head_text">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_centerInParent">true</item>
+
+    </style>
+
+    <style name="my_number_1">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="my_walletAndMore_Image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+    <style name="my_walletAndMore_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="my_Service">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="my_Service_more">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="my_focusNum">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="my_focus_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+
+    <style name="AppTheme.TransparentStausBar" parent="AppTheme"></style>
+
+    <style name="TranslucentTheme" parent="AppTheme">
+        <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
+    </style>
+    //以上为我的界面用到的style
 </resources>

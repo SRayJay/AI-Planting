@@ -62,7 +62,6 @@ public class StoreFragment extends Fragment {
         left_list_items.add("园艺周边");
         left_list_items.add("风格");
         left_list_items.add("植物图书");
-        left_list_items.add("玫瑰科");
         left_list_items.add("蕨类植物");
         left_list_items.add("藻类植物");
 
@@ -77,8 +76,8 @@ public class StoreFragment extends Fragment {
         }
         plant_class_list_matrix.add(plant_class_list);
         plant_class_list.clear();
-        plant_classifications= new Plant_Classification[]{new Plant_Classification("白玫瑰", R.drawable.plant1),
-                new Plant_Classification("黄玫瑰", R.drawable.plant1), new Plant_Classification("蓝玫瑰", R.drawable.plant1), new Plant_Classification("绿玫瑰", R.drawable.plant1)};
+        plant_classifications= new Plant_Classification[]{new Plant_Classification("蓝苹果", R.drawable.pic_blueapple),
+                new Plant_Classification("仙人球", R.drawable.pic_xianrenqiu), new Plant_Classification("玉露", R.drawable.pic_yulu), new Plant_Classification("树冰", R.drawable.pic_treeice),new Plant_Classification("小米星",R.drawable.pic_xiaomixing),new Plant_Classification("晚霞之舞",R.drawable.pic_wanxiazhiwu),new Plant_Classification("月亮仙子",R.drawable.pic_moonxianzi),new Plant_Classification("千佛手",R.drawable.pic_qianfoshou),new Plant_Classification("芦荟",R.drawable.pic_luhui)};
         for (int i=0;i<plant_classifications.length;i++){
             plant_class_list.add(plant_classifications[i]);
         }

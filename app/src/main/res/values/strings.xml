@@ -8,4 +8,35 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="UserName">用户昵称</string>
+    <string name="EdiImfor">编辑个人资料</string>
+    <string name="ToPersonalPage">个人主页</string>
+    <string name="FocusNum">00</string>
+    <string name="Focus">关注</string>
+    <string name="FansNum">00</string>
+    <string name="Fans">粉丝</string>
+    <string name="LikeNum">00</string>
+    <string name="Like">获赞</string>
+    <string name="SignIn">签到</string>
+    <string name="integral">积分</string>
+    <string name="orders">订单</string>
+    <string name="coupons">优惠券</string>
+
+    <string name="my_personalService">个人服务</string>
+    <string name="my_otherService">其他服务</string>
+
+    <string name="my_address">地址管理</string>
+    <string name="my_browsingHistory">浏览记录</string>
+    <string name="my_myCollection">我的收藏</string>
+    <string name="my_release">我的发布</string>
+    <string name="my_myComments">我的评论</string>
+    <string name="my_answer">我的回答</string>
+    <string name="my_takePicture">拍照识花</string>
+    <string name="my_QrCode">我的二维码</string>
+
+    <string name="my_gift">推荐有礼</string>
+    <string name="my_customerService">客服咨询</string>
+    <string name="my_feedBacke">意见反馈</string>
+    <string name="my_clean">清理缓存</string>
+    <string name="my_about">关于我们</string>
 </resources>

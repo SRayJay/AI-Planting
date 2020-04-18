@@ -58,16 +58,15 @@ public class BookFragment extends Fragment {
         left_list_items.add("楝科");
 
         Plant_Classification[] plant_classifications = {new Plant_Classification("玫瑰",R.drawable.plant1),
-                new Plant_Classification("月季",R.drawable.plant1),new Plant_Classification("海棠",R.drawable.plant1),new Plant_Classification("石楠",R.drawable.plant1),
-                new Plant_Classification("梅花",R.drawable.plant1)};
+                new Plant_Classification("月季",R.drawable.pic_yueji),new Plant_Classification("海棠",R.drawable.pic_haitang),new Plant_Classification("梅花",R.drawable.plant1)};
         plant_class_list.clear();
         for (int i=0;i<plant_classifications.length;i++){
             plant_class_list.add(plant_classifications[i]);
         }
         plant_class_list_matrix.add(plant_class_list);
         plant_class_list.clear();
-        plant_classifications= new Plant_Classification[]{new Plant_Classification("玫瑰", R.drawable.plant1),
-                new Plant_Classification("月季", R.drawable.plant1), new Plant_Classification("海棠", R.drawable.plant1), new Plant_Classification("石楠", R.drawable.plant1)};
+        plant_classifications= new Plant_Classification[]{new Plant_Classification("玫瑰", R.drawable.pic_meigui),
+                new Plant_Classification("月季", R.drawable.pic_yueji), new Plant_Classification("海棠", R.drawable.pic_haitang), new Plant_Classification("梅花", R.drawable.pic_meihua)};
         for (int i=0;i<plant_classifications.length;i++){
             plant_class_list.add(plant_classifications[i]);
         }

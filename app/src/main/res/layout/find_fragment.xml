@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/find_head"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/bg_white">
+
+        <RelativeLayout
+            android:id="@+id/find_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/bg_white">
+
+            <EditText
+                android:backgroundTint="@color/bg_f4"
+                android:id="@+id/search_input"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_bg"
+                android:drawableLeft="@mipmap/search"
+                android:drawablePadding="0dp"
+                android:hint="春天种什么植物"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:padding="8dp"
+                android:gravity="center_horizontal"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_width="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/remind" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/find_bar"
+            android:paddingTop="0dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:text="关注"
+                android:textSize="16sp"
+                android:textColor="#999999"/>
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:text="推荐"
+                android:textSize="16sp"
+                android:textColor="#999999"/>
+
+            <TextView
+                android:id="@+id/small_title"
+                android:layout_width="49dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/transparent"
+                android:text="话题"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:text="直播"
+                android:textSize="16sp"
+                android:textColor="#999999"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/find_head"
+        android:id="@+id/find_care"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gray"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp">
+            <LinearLayout
+                android:id="@+id/find_care1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:background="@color/bg_white"
+                    android:padding="5dp"
+                    android:layout_margin="5dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/plant2"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="#网纹苍为何如此善变"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:background="@color/bg_white"
+                    android:padding="5dp"
+                    android:layout_margin="5dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/plant3"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="#压不住它开花的欲望"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:background="@color/bg_white"
+                    android:padding="5dp"
+                    android:layout_margin="5dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/plant5"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="#养花的诀窍"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/find_care2"
+                android:layout_below="@id/find_care1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:background="@color/bg_white"
+                    android:padding="5dp"
+                    android:layout_margin="5dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/plant4"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="#收下的我的心"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:background="@color/bg_white"
+                    android:padding="5dp"
+                    android:layout_margin="5dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/plant6"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="#春季百般聊赖"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:background="@color/bg_white"
+                    android:padding="5dp"
+                    android:layout_margin="5dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/plant7"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="#分享我的幸运"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>        
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/find_care"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="0dp"
+        android:scrollbars="none"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/find_talk_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:id="@+id/talk1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                tools:ignore="InvalidId">
+
+                <ImageView
+                    android:id="@+id/find_talk_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/plant1" />
+
+                <RelativeLayout
+                    android:id="@+id/find_talk_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/find_talk_image">
+
+                    <TextView
+                        android:id="@+id/find_talk_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_margin="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:text="#扦插的法师"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@id/find_talk_head"
+                        android:src="@mipmap/hot" />
+
+                    <TextView
+                        android:id="@+id/find_talk_syn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/find_talk_head"
+                        android:layout_margin="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:ellipsize="end"
+                        android:lines="2"
+                        android:text="多肉法师的繁殖方法主要是以扦插法。但扦插法又分为侧芽扦插,砍头扦插和枝条扦插三种操作方法。繁殖数量最多,成苗最快的繁殖方法要数侧芽扦插法。砍头扦插法成苗也."
+                        android:textColor="#999999"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:id="@+id/talk_head_image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true">
+                    <android.support.v7.widget.CardView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/head1" />
+                    </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginLeft="-10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/head2" />
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginLeft="-10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="17dp"
+                                android:layout_marginRight="5dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/head3" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/find_talk_peo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/talk_head_image1"
+                        android:text="等1803人参与"
+                        android:textColor="#cccccc"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/talk2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/talk1"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/find_talk_image2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/plant8" />
+
+                <RelativeLayout
+                    android:id="@+id/find_talk_txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/find_talk_image2">
+
+                    <TextView
+                        android:id="@+id/find_talk_head2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_margin="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:text="#不用浇水的植物"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@id/find_talk_head2"
+                        android:src="@mipmap/hot" />
+
+                    <TextView
+                        android:id="@+id/find_talk_syn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/find_talk_head2"
+                        android:layout_margin="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:ellipsize="end"
+                        android:lines="2"
+                        android:text="在养殖植物的过程中，有很多植物具有较强的适应能力，在恶劣的环境中也有较好的生长。其中仙人掌、仙人球、虎皮兰、芦荟、金钱树等，都是非常耐旱的植物，日常养护的过程中，长时间不浇水也不会影响到植株的正常生长。"
+                        android:textColor="#999999"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:id="@+id/talk_head_image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true">
+                        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/head5" />
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginLeft="-10dp">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="22dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/head4" />
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginLeft="-10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/head1"
+                                android:layout_marginRight="5dp"/>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/find_talk_peo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_toRightOf="@+id/talk_head_image2"
+                        android:layout_alignParentBottom="true"
+                        android:text="等603人参与"
+                        android:textColor="#cccccc"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/talk3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/talk2"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/find_talk_image3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/plant9" />
+
+                <RelativeLayout
+                    android:id="@+id/find_talk_txt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/find_talk_image3">
+
+                    <TextView
+                        android:id="@+id/find_talk_head3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_margin="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:text="#一花一草一世界"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@id/find_talk_head3"
+                        android:src="@mipmap/hot" />
+
+                    <TextView
+                        android:id="@+id/find_talk_syn3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/find_talk_head3"
+                        android:layout_margin="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:ellipsize="end"
+                        android:lines="2"
+                        android:text="世界本无大小，在你所认知的世界里，也许你是自己世界的主体，这是属于你的世界，在其他生命的世界里，自身又是世界的主体。草木枯萎，花卉凋谢，生老病死，这本身就是一种轮回。"
+                        android:textColor="#999999"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:id="@+id/talk_head_image3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true">
+                        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/head3" />
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginLeft="-10dp">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="20dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/head1" />
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginLeft="-10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/head5"
+                                android:layout_marginRight="5dp"/>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/find_talk_peo3"
+                        android:layout_toRightOf="@+id/talk_head_image3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:text="等1403人参与"
+                        android:textColor="#cccccc"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/talk4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/talk3"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/find_talk_image4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic_hongyundangtou" />
+
+                <RelativeLayout
+                    android:id="@+id/find_talk_txt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/find_talk_image4">
+
+                    <TextView
+                        android:id="@+id/find_talk_head4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_margin="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:text="#光线不足也能繁花似锦"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@id/find_talk_head4"
+                        android:src="@mipmap/hot" />
+
+                    <TextView
+                        android:id="@+id/find_talk_syn4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/find_talk_head4"
+                        android:layout_margin="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:ellipsize="end"
+                        android:lines="2"
+                        android:text="小阳台色彩最浓郁的季节，莫过于春天了，春天开始，阴暗的北露台开始见到了阳光，..."
+                        android:textColor="#999999"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:id="@+id/talk_head_image4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/head3" />
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginLeft="-10dp">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="20dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/head1" />
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginLeft="-10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/head5"
+                                android:layout_marginRight="5dp"/>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/find_talk_peo4"
+                        android:layout_toRightOf="@+id/talk_head_image4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:text="等1403人参与"
+                        android:textColor="#cccccc"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -48,7 +48,7 @@
             android:id="@+id/right_top_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="多肉植物"
+            android:text="蔷薇科"
             android:textColor="@color/bg_black"
             android:textSize="17sp"
             android:padding="16dp"/>

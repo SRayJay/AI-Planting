@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private StoreFragment store_fragment;
     private BookFragment book_fragment;
+    private FindFragment find_fragment;
+    private MyFragment my_fragment;
     private FragmentManager fManager;
 
 
@@ -84,7 +86,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void hideAllFragment(FragmentTransaction fragmentTransaction){
         if(store_fragment != null)fragmentTransaction.hide(store_fragment);
         if(book_fragment != null)fragmentTransaction.hide(book_fragment);
-
+        if(find_fragment != null)fragmentTransaction.hide(find_fragment);
+        if(my_fragment != null)fragmentTransaction.hide(my_fragment);
     }
 
     @Override
@@ -115,15 +118,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }else{
                     fTransaction.show(store_fragment);
                 }
-
                 break;
             case R.id.tab_menu_community:
                 setSelected();
                 tab_menu_community.setSelected(true);
+                if (find_fragment==null){
+                    find_fragment = new FindFragment();
+                    fTransaction.add(R.id.ly_content,find_fragment);
+                }else{
+                    fTransaction.show(find_fragment);
+                }
                 break;
             case R.id.tab_menu_my:
                 setSelected();
                 tab_menu_my.setSelected(true);
+                if (my_fragment==null){
+                    my_fragment = new MyFragment();
+                    fTransaction.add(R.id.ly_content,my_fragment);
+                }else{
+                    fTransaction.show(my_fragment);
+                }
                 break;
         }
         fTransaction.commit();
